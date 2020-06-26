@@ -123,7 +123,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -134,7 +134,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-3"
+#define CUSTOM_MACHINE_NAME "Ender-3 - 26-Jun-2020"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -491,9 +491,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 21.73
-  #define DEFAULT_Ki 1.54
-  #define DEFAULT_Kd 76.55
+  #define DEFAULT_Kp 19.21
+  #define DEFAULT_Ki 1.32
+  #define DEFAULT_Kd 70.04
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -546,9 +546,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
 // Creality Ender-3
-#define DEFAULT_bedKp 156.64
-#define DEFAULT_bedKi 28.12
-#define DEFAULT_bedKd 581.69
+#define DEFAULT_bedKp 167.94
+#define DEFAULT_bedKi 29.29
+#define DEFAULT_bedKd 642.03
 
 //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
 //from pidautotune
@@ -988,7 +988,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -41, -11, -2.375 }
+#define NOZZLE_TO_PROBE_OFFSET { -41, -11, -2.62 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
