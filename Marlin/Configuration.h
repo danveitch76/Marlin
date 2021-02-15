@@ -997,7 +997,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -41, -11, -2.62 }
+#define NOZZLE_TO_PROBE_OFFSET { -41, -11, -3.09 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1167,12 +1167,12 @@
 // @section machine
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 4
+#define X_MIN_POS 0
 #define Y_MIN_POS -2
-#define Z_MIN_POS 0
-#define X_MAX_POS 235
+#define Z_MIN_POS -5
+#define X_MAX_POS 232
 #define Y_MAX_POS 235
-#define Z_MAX_POS 250
+#define Z_MAX_POS 240
 // The size of the print bed
 #if X_MIN_POS > 0
 #define X_BED_SIZE (X_MAX_POS - 1 - X_MIN_POS)
