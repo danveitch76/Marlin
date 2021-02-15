@@ -138,7 +138,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-3 - 26-Jun-2020"
+#define CUSTOM_MACHINE_NAME "Ender-3 (BF) - 15-FEB-2021"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1007,7 +1007,7 @@
 #define XY_PROBE_SPEED (133*60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_SPEED_FAST (4*60)
+#define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
 
 // Feedrate (mm/min) for the "accurate" probe of each point
 #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)
@@ -1335,7 +1335,7 @@
  * leveling immediately after G28.
  */
 #define RESTORE_LEVELING_AFTER_G28
-#define ENABLE_LEVELING_AFTER_G28
+//#define ENABLE_LEVELING_AFTER_G28
 
 /**
  * Auto-leveling needs preheating
@@ -1525,7 +1525,7 @@
 
 // Homing speeds (mm/min)
 #define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (20*60) }
-
+#define HOMING_FEEDRATE_Z  (20*60)
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
 
