@@ -3466,7 +3466,7 @@
   #define MAIN_MENU_ITEM_2_CONFIRM
 
   #define MAIN_MENU_ITEM_3_DESC "Probe Accuracy Test"
-  #define MAIN_MENU_ITEM_3_GCODE "G28\nG48\nM503\nM400\nM117 " #define MAIN_MENU_ITEM_3_DESC " done"
+  #define MAIN_MENU_ITEM_3_GCODE "G28\nG48\nM503\nM400\nM117 " MAIN_MENU_ITEM_3_DESC " done"
   //#define MAIN_MENU_ITEM_3_CONFIRM
 
   //#define MAIN_MENU_ITEM_4_DESC "Heat Bed/Home/Level"
