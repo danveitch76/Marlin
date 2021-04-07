@@ -3463,7 +3463,7 @@
 
   #define MAIN_MENU_ITEM_2_DESC "Check EEPROM after firmware change"
   #define MAIN_MENU_ITEM_2_GCODE "M504\nM502\nM500\nM501\nM504\nM503\nG28 XY\nM400\nM117 EEPROM update done"
-  #define MAIN_MENU_ITEM_2_CONFIRM
+  //#define MAIN_MENU_ITEM_2_CONFIRM
 
   #define MAIN_MENU_ITEM_3_DESC "Probe Accuracy Test"
   #define MAIN_MENU_ITEM_3_GCODE "G28\nG48\nM503\nM400\nM117 " MAIN_MENU_ITEM_3_DESC " done"
