@@ -100,7 +100,7 @@ struct SerialBase {
 
   // Static dispatch methods below:
   // The most important method here is where it all ends to:
-  void write(uint8_t c)             { SerialChild->write(c); }
+  size_t write(uint8_t c)           { return SerialChild->write(c); }
 
   // Called when the parser finished processing an instruction, usually build to nothing
   void msgDone() const              { SerialChild->msgDone(); }
